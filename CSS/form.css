@@ -9,3 +9,72 @@
 html{
     scroll-behavior: smooth;
 }
+
+
+
+                                                /*     ici débute la section 3    */
+
+
+#section_3{
+    background: linear-gradient(black, grey);
+}
+#grille{
+    display: grid;
+    padding-bottom: 20%;
+}
+.resto{
+    border: 1px solid;
+    width:70%;
+    height: 60%;
+    text-align: center;
+    justify-self: center;
+    background-color: aliceblue;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    margin-top: 60%;
+    margin-bottom: -20%;
+    border-radius:5% ;
+}
+.resto .foto{
+    width: 90%;
+    height: 20%;
+    border-radius: 50%;
+    margin-top:-35% ;
+    border-style: double;
+}
+.resto .stars{
+    width: 40px;
+    padding-top:20%;   
+}
+.resto .lieu{
+    width: 25px;
+    padding-top: 18%;
+    padding-bottom: 2%;
+}
+.resto .phone{
+    width: 60px;
+    padding-top: 8%;
+    padding-bottom: 2%;
+}
+.resto .span{
+    text-align: center;
+    margin-left: 8%;
+    margin-right:8% ;
+}
+#grille{
+    display: grid;
+    grid: auto-flow / 1fr 1fr 1fr;
+}
+h2{
+    padding-top:3%;
+    padding-bottom: 4%;
+}
+hr{
+  color:black;
+  inline-size: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+

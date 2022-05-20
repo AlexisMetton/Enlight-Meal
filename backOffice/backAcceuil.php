@@ -89,9 +89,7 @@ echo "Erreur : " . $e->getMessage();
 <?php foreach($administrateur as $administrateurs){ ?>
 
 <div class="container-fluid">
-    <nav class="navbar navbar-expand-md navbar-black bg-black"> <!--à quelle taille la navbar doit se déployer avant de passer en design responsive-->
-
-        
+    <nav class="navbar navbar-expand-md navbar-black bg-black"> <!--à quelle taille la navbar doit se déployer avant de passer en design responsive-->   
         <a class="navbar-brand text-white" href="../index.php"><h1 style="font-size:25px"><?php echo $administrateurs['prenomAdmin'] ?></h1>  <!--navbar-brand = intitulé de la navbar-->
             <span style="color: black;
                   text-shadow: 1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 
@@ -100,8 +98,6 @@ echo "Erreur : " . $e->getMessage();
             <img class="align-baseline" src="../img/projecteur.png" height="60px" style="margin-top:-35px;">  <!---aligner l'image à admin -->
         </h1>
         </a>
-              
-
     <?php 
     } 
     ?>
@@ -197,7 +193,7 @@ echo "Erreur : " . $e->getMessage();
     <a class="modif" style="float:left;" onclick="openModal1(event)">
         <button id="<?php echo $restaurant['Nom']?>" style="color:whitesmoke; background-color:transparent; border-color:whitesmoke">Modifier</button>
     </a>
-    <a class="croix" style="float:right" href="supprimer.php?Nom=<?php echo $restaurant['Nom']; ?>">
+    <a onclick="return confirm('Voulez-vous vraiment supprimer ce restaurant ?');" class="croix" style="float:right" href="supprimer.php?Nom=<?php echo $restaurant['Nom']; ?>">
         <button style="color:whitesmoke; background-color:transparent; border-color:whitesmoke">&times;</button>
     </a>
 </div>
@@ -377,6 +373,9 @@ echo "Erreur : " . $e->getMessage();
 </div> 
 <div id="popup1">
 </div>  
+<div id="scroll_to_top">
+    <a href="#top"><img src="../img/scrollTop.png" alt="Retourner en haut" height="50px"/></a>
+</div>
 </body>
 </html>
 <script src="recherche.js"></script>

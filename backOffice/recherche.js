@@ -342,3 +342,14 @@ function openModal(e){
         document.getElementById('FileLi3').style.display = "none";
         document.getElementById('FileIm3').style.display = "block";
     }
+
+    
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    document.getElementById("scroll_to_top").style.display = "block";
+  } else {
+    document.getElementById("scroll_to_top").style.display = "none";
+  }
+}

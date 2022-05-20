@@ -13,7 +13,7 @@ h1{
     display: inline-flex;
     margin-top: 10px!important ;
 }  
-.h1:hover{
+a:hover .h1{
         text-shadow: 1px 1px 10px gold, 1px -1px 10px gold, -1px 1px 10px gold, -1px -1px 10px gold, 1px -1px 10px gold, -1px 1px 10px gold, -1px -1px 10px gold, -1px -1px 10px gold;
         transition: 250ms;
 }   
@@ -156,11 +156,18 @@ h1{
     text-shadow: 1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, -1px -1px 0 #ffffff;
     letter-spacing: 5px;
     margin-bottom:10px;
+    border-style: solid;
 }
 #popup .form-group .btn-primary:hover{
     background-color: whitesmoke;
     border-color: whitesmoke;
     color:black;
+}
+#popup .form-group .btn-primary:active{
+    box-shadow:none !important;
+}
+#popup .form-group .btn-primary:focus{
+    box-shadow:none !important;
 }
 #popup .form-group .form-control{
     background-color: black;
@@ -210,6 +217,12 @@ h1{
     border-color: whitesmoke;
     color:black;
 }
+#popup1 .form-group .btn-primary:active{
+    box-shadow:none !important;
+}
+#popup1 .form-group .btn-primary:focus{
+    box-shadow:none !important;
+}
 #popup1 .form-group .form-control{
     background-color: black;
     color:whitesmoke;
@@ -218,6 +231,7 @@ h1{
     background-color: whitesmoke;
     color: black;
 }
+
 #popup1 span{
     margin-top: -10px;
     position: absolute;
@@ -266,4 +280,22 @@ h1{
         text-shadow: 1px 1px 10px gold, 1px -1px 10px gold, -1px 1px 10px gold, -1px -1px 10px gold, 1px -1px 10px gold, -1px 1px 10px gold, -1px -1px 10px gold, -1px -1px 10px gold;
         transition: 250ms;
 } 
+}
+
+.dropdown-menu a button:focus{
+    background-color: black;
+    color:whitesmoke;
+}
+.dropdown-menu a:hover{
+    text-decoration: none;
+}
+
+.container-fluid button:focus{
+    box-shadow: none;
+}
+.container-fluid button:active{
+    box-shadow: none;
+}
+.dropdown-menu{
+    background-color: rgba(255, 255, 255, 0.877);
 }

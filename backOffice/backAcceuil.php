@@ -114,15 +114,13 @@ echo "Erreur : " . $e->getMessage();
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
                 aria-expanded="false" aria-label="Toggle navigation" style="background:url(../img/burger.svg); background-repeat: no-repeat;
                 background-size: contain;background-position-y: center;background-position-x: center; width:30px;height:30px">
-            <span class="navbar-toggler-icon" style="color:whitesmoke">
-            </span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="flex-fill navbar-nav mr-auto">
 <!------ "nav-item" englobe le dropdown  et l'élément suivant aura class dropdown-toggle ET nav-link Et attribut data-bs-toggle="dropdown"-->       
             <li class="nav-item dropdown">              
-                    <a class="nav-link dropdown-toggle text-white" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+                    <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button" style="cursor:pointer;">
                        Catégories
                     </a>
 <!-------------- au mm niveau que nav-link ---:  une balise "ul" avec la classe "dropdown-menu", contenant des "dropdown-item"--->                   

@@ -119,7 +119,7 @@ echo "Erreur : " . $e->getMessage();
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="flex-fill navbar-nav mr-auto">
 <!------ "nav-item" englobe le dropdown  et l'élément suivant aura class dropdown-toggle ET nav-link Et attribut data-bs-toggle="dropdown"-->       
-            <li class="nav-item dropdown">              
+            <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button" style="cursor:pointer;">
                        Catégories
                     </a>
@@ -134,13 +134,13 @@ echo "Erreur : " . $e->getMessage();
                     </div>
             </li>
             <li class="flex-fill nav-item">
-                    <a class="nav-link text-white" onclick="openModal()" style="cursor:pointer;">
-                       Ajouter un restaurant
-                    </a>
+                <a class="nav-link text-white" onclick="openModal()" style="cursor:pointer;">
+                    Ajouter un restaurant
+                </a>
             </li>
-                    <form action="logout.php" method="post">
-                          <input type="submit" name="logout" value="Déconnexion" />
-                    </form>           
+                <form action="logout.php" method="post">
+                    <input type="submit" name="logout" value="Déconnexion" />
+                </form>           
           </ul>
         </div>
 

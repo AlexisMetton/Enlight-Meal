@@ -109,7 +109,7 @@ function data(data) {
                                                                 <div style="display:none" onclick="chargementLiens()" class="file" id="FileLi">Liens</div>
                                                             </div>
                                                             <div class="form-group">
-                                                                <input type="number" name="id_Categorie" class="form-control" placeholder="*"  autocomplete="off" value="`+ restaurant[0]['id_Categorie'] +`">
+                                                                <input type="number" name="id_Categorie" class="form-control" placeholder="id_Categorie : 1,2,3 ou 4"  autocomplete="off" value="`+ restaurant[0]['id_Categorie'] +`">
                                                             </div>
                                                             <h2 class="text-center" style="color:whitesmoke;margin-top:20px">Modifier un popup</h2>  
                                                             <div class="form-group">

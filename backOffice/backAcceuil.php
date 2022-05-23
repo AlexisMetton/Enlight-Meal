@@ -339,7 +339,7 @@ echo "Erreur : " . $e->getMessage();
                         <input type="file" name="Images" class="form-control" placeholder="nomImage.jpg"  autocomplete="off" required>
                     </div>
                     <div class="form-group">
-                        <input type="number" name="id_Categorie" class="form-control" min="1" max="4" placeholder="1,2,3 ou 4"  autocomplete="off" required>
+                        <input type="number" name="id_Categorie" class="form-control" min="1" max="4" placeholder="id_Categorie : 1,2,3 ou 4"  autocomplete="off" required>
                     </div>
                     <h2 class="text-center" style="color:whitesmoke;margin-top:20px">Ajouter un popup</h2>  
                     <div class="form-group">

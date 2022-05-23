@@ -89,9 +89,7 @@ echo "Erreur : " . $e->getMessage();
 <?php foreach($administrateur as $administrateurs){ ?>
 
 <div class="container-fluid">
-    <nav class="navbar navbar-expand-md navbar-black bg-black"> <!--à quelle taille la navbar doit se déployer avant de passer en design responsive-->
-
-        
+    <nav class="navbar navbar-expand-md navbar-black bg-black"> <!--à quelle taille la navbar doit se déployer avant de passer en design responsive-->   
         <a class="navbar-brand text-white" href="../index.php"><h1 style="font-size:25px"><?php echo $administrateurs['prenomAdmin'] ?></h1>  <!--navbar-brand = intitulé de la navbar-->
             <span style="color: black;
                   text-shadow: 1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 
@@ -100,8 +98,6 @@ echo "Erreur : " . $e->getMessage();
             <img class="align-baseline" src="../img/projecteur.png" height="60px" style="margin-top:-35px;">  <!---aligner l'image à admin -->
         </h1>
         </a>
-              
-
     <?php 
     } 
     ?>
@@ -114,15 +110,13 @@ echo "Erreur : " . $e->getMessage();
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
                 aria-expanded="false" aria-label="Toggle navigation" style="background:url(../img/burger.svg); background-repeat: no-repeat;
                 background-size: contain;background-position-y: center;background-position-x: center; width:30px;height:30px">
-            <span class="navbar-toggler-icon" style="color:whitesmoke">
-            </span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="flex-fill navbar-nav mr-auto">
 <!------ "nav-item" englobe le dropdown  et l'élément suivant aura class dropdown-toggle ET nav-link Et attribut data-bs-toggle="dropdown"-->       
-            <li class="nav-item dropdown">              
-                    <a class="nav-link dropdown-toggle text-white" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+            <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button" style="cursor:pointer;">
                        Catégories
                     </a>
 <!-------------- au mm niveau que nav-link ---:  une balise "ul" avec la classe "dropdown-menu", contenant des "dropdown-item"--->                   
@@ -136,13 +130,13 @@ echo "Erreur : " . $e->getMessage();
                     </div>
             </li>
             <li class="flex-fill nav-item">
-                    <a class="nav-link text-white" onclick="openModal()" style="cursor:pointer;">
-                       Ajouter un restaurant
-                    </a>
+                <a class="nav-link text-white" onclick="openModal()" style="cursor:pointer;">
+                    Ajouter un restaurant
+                </a>
             </li>
-                    <form action="logout.php" method="post">
-                          <input type="submit" name="logout" value="Déconnexion" />
-                    </form>           
+                <form action="logout.php" method="post">
+                    <input type="submit" name="logout" value="Déconnexion" />
+                </form>           
           </ul>
         </div>
 
@@ -199,7 +193,7 @@ echo "Erreur : " . $e->getMessage();
     <a class="modif" style="float:left;" onclick="openModal1(event)">
         <button id="<?php echo $restaurant['Nom']?>" style="color:whitesmoke; background-color:transparent; border-color:whitesmoke">Modifier</button>
     </a>
-    <a class="croix" style="float:right" href="supprimer.php?Nom=<?php echo $restaurant['Nom']; ?>">
+    <a onclick="return confirm('Voulez-vous vraiment supprimer ce restaurant ?');" class="croix" style="float:right" href="supprimer.php?Nom=<?php echo $restaurant['Nom']; ?>">
         <button style="color:whitesmoke; background-color:transparent; border-color:whitesmoke">&times;</button>
     </a>
 </div>
@@ -379,6 +373,9 @@ echo "Erreur : " . $e->getMessage();
 </div> 
 <div id="popup1">
 </div>  
+<div id="scroll_to_top">
+    <a href="#top"><img src="../img/scrollTop.png" alt="Retourner en haut" height="50px"/></a>
+</div>
 </body>
 </html>
 <script src="recherche.js"></script>

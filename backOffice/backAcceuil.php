@@ -322,7 +322,7 @@ echo "Erreur : " . $e->getMessage();
 <div id="popup">
                 <form action="nouveauRestaurant.php" method="post">
                     <span onclick="closeModal()" id="btnClose" class="btnClose">&times;</span>
-                    <h2 class="text-center" style="color:whitesmoke;margin-top:20px">Ajoutez un restaurant</h2>       
+                    <h2 class="text-center" style="color:whitesmoke;margin-top:20px">Ajouter un restaurant</h2>       
                     <div class="form-group">
                         <input type="text" name="Nom" class="form-control" placeholder="Nom"  autocomplete="off" required>
                     </div>
@@ -341,7 +341,7 @@ echo "Erreur : " . $e->getMessage();
                     <div class="form-group">
                         <input type="number" name="id_Categorie" class="form-control" min="1" max="4" placeholder="1,2,3 ou 4"  autocomplete="off" required>
                     </div>
-                    <h2 class="text-center" style="color:whitesmoke;margin-top:20px">Ajoutez un popup</h2>  
+                    <h2 class="text-center" style="color:whitesmoke;margin-top:20px">Ajouter un popup</h2>  
                     <div class="form-group">
                         <input type="file" name="Image1" class="form-control" placeholder="nomImage1.jpg"  autocomplete="off" required>
                     </div>
